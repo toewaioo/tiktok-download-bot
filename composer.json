@@ -1,0 +1,22 @@
+{
+  "name": "toewaioo/tiktok-download-bot",
+  "description": "Telegram bot for downloading TikTok videos with user management",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-pdo": "*",
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "TikTokDownloadBot\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Toewaioo",
+      "email": "toewaioo.dev@gmail.com"
+    }
+  ]
+}
