@@ -3,9 +3,9 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use TikTokDownloadBot\Bot;
 
-// Load environment variables if using dotenv
-// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
-// $dotenv->load();
+//Load environment variables if using dotenv
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/');
+$dotenv->load();
 
 $update = json_decode(file_get_contents('php://input'), true);
 
