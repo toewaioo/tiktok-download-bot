@@ -150,7 +150,7 @@ function sendAdvertisementToAllUsers($ad_content)
         $result = telegramApiCall('sendMessage', [
             'chat_id' => $chat_id,
             'text' => $ad_content,
-            'parse_mode' => 'HTML'
+            'parse_mode' => 'MarkdownV2'
         ]);
 
         $status = $result && $result['ok'] ? 'sent' : 'failed';
@@ -612,7 +612,7 @@ if (isset($update['message'])) {
 
                 $video_response = telegramApiCall('sendVideo', [
                     'chat_id' => $chat_id,
-                    'video' => $video_url,
+                    'video' => $hd_video_url,
                     'caption' => $caption,
                     'parse_mode' => 'MarkdownV2',
                     'supports_streaming' => true,
@@ -697,14 +697,14 @@ else if (isset($update['callback_query'])) {
     if ($tiktok_data) {
         $title = escapeMarkdown($tiktok_data['title'] ?? 'No title');
 
-        if ($action === ACTION_GET_HD_VIDEO && isset($tiktok_data['hdplay'])) {
+        if ($action === ACTION_GET_HD_VIDEO && isset($tiktok_data['play'])) {
             sendChatAction($chat_id, 'upload_video');
             // Log the request
             logUserRequest($user_id, $chat_id, 'video', "https://www.tiktok.com/t/" . $tiktok_id);
 
             telegramApiCall('sendVideo', [
                 'chat_id' => $chat_id,
-                'video' => $tiktok_data['hdplay'],
+                'video' => $tiktok_data['play'],
                 'caption' => "🎬 *{$title}* \(HD Version\)",
                 'parse_mode' => 'MarkdownV2'
             ]);
