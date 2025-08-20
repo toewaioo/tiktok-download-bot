@@ -4,8 +4,8 @@ define('BOT_TOKEN', getenv('BOT_TOKEN') ?: '7598607140:AAED0yT8G_MGSi2_6YRLxcFNl
 define('TELEGRAM_API_URL', 'https://api.telegram.org/bot' . BOT_TOKEN . '/');
 
 // Channel configuration
-define('CHANNEL_USERNAME', '@your_channel_username');
-define('CHANNEL_LINK', 'https://t.me/your_channel');
+define('CHANNEL_USERNAME', '@join_my_channel2');
+define('CHANNEL_LINK', 'https://t.me/join_my_channel2');
 define('CHANNEL_ID', '-1001234567890'); // Your channel ID
 
 // Callback actions
