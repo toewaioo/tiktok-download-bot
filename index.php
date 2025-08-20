@@ -149,7 +149,7 @@ function sendAdvertisementToAllUsers($ad_content)
     foreach ($chat_ids as $chat_id) {
         $result = telegramApiCall('sendMessage', [
             'chat_id' => $chat_id,
-            'text' => $ad_content,
+            'text' => escapeMarkdown($ad_content),
             'parse_mode' => 'MarkdownV2'
         ]);
 
