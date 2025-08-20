@@ -3,7 +3,7 @@
   "description": "Telegram bot for downloading TikTok videos with user management",
   "type": "project",
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.4",
     "ext-curl": "*",
     "ext-pdo": "*",
     "vlucas/phpdotenv": "^5.4"

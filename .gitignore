@@ -1,0 +1,28 @@
+# Ignore PHP built files and logs
+*.log
+*.cache
+
+# Composer dependencies
+/vendor/
+
+# Environment files
+.env
+
+# IDE and editor folders/files
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node dependencies (if any)
+node_modules/
+
+# Backup files
+*.bak
+*.tmp
+
+# Ignore coverage reports
+coverage/
