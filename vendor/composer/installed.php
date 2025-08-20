@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'toewaioo/tiktok-download-bot',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'a7fa6e9d04a6973f45874c4eca9f97e5c006862f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -56,9 +56,9 @@
             'dev_requirement' => false,
         ),
         'toewaioo/tiktok-download-bot' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'a7fa6e9d04a6973f45874c4eca9f97e5c006862f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
